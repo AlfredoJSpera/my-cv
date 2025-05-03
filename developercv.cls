@@ -127,7 +127,7 @@
 		% Determine skill level
 		\pgfmathsetmacro{\skilllevel}{
 			ifthenelse(\perc<33,"Principiante",
-				ifthenelse(\perc<66,"Intermedio","Esperto"))
+				ifthenelse(\perc<66,"Intermedio","Avanzato"))
 		}
 		
 		% Draw label and level
