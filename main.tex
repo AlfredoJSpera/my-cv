@@ -110,39 +110,45 @@
 \begin{minipage}[t]{0.4\textwidth} % Right column with the skills bar chart, change the width as needed
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
-	\begin{barchart}{4.5} % The parameter to the barchart environment is the maximum width (in cm) of the longest bar
-		\baritem{JavaScript}{60}
-		\baritem{PHP}{100}
-		\baritem{SASS/LESS}{70}
-		\baritem{Bootstrap}{70}
-		\baritem{Git}{40}
-		\baritem{LaTeX}{60}
+	\begin{barchart}{3} % The parameter to the barchart environment is the maximum width (in cm) of the longest bar
+		\baritem{Java (SE, EE)}{100}{black}{black}
+		\baritem{Python}{75}{black}{black}
+		\baritem{JavaScript}{60}{black}{black}
+		\baritem{TypeScript}{52}{black}{black}
+		\baritem{C}{32}{black}{black}
+		\baritem{C\#}{22}{black}{black}
 	\end{barchart}
 \end{minipage}
+
+% Output a series of bubbles showing your proficiency with environments and/or tools
+\begin{center}
+	% Each bubble must be in the format of '<size>/<label>' and you can specify as many bubbles as will fit on the page
+	\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender} 
+\end{center}
 
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\cvsect{Experience}
-
-\begin{entrylist}
-	\entry
-		{2017 -- 3/2018}
-		{Front-end developer}
-		{Big Corporation Name Inc.}
-		{\lorem \lorem \lorem\\ \texttt{node.js}\slashsep\texttt{Vue.js}\slashsep\texttt{Electron}}
-	\entry
-		{2015 -- 2018\\\footnotesize{part time}}
-		{Full stack developer}
-		{Famous Eshop Inc.}
-		{\lorem\lorem\\ \texttt{PHP}\slashsep\texttt{JS}\slashsep\texttt{MariaDB}\slashsep\texttt{Linux}}
-	\entry
-		{2013 -- 2014\\\footnotesize{part time}}
-		{Junior PHP Developer}
-		{example.com}
-		{\lorem\lorem\\ \texttt{PHP}\slashsep\texttt{Laravel}}
-\end{entrylist}
+%\cvsect{Experience}
+%
+%\begin{entrylist}
+%	\entry
+%		{2017 -- 3/2018}
+%		{Front-end developer}
+%		{Big Corporation Name Inc.}
+%		{\lorem \lorem \lorem\\ \texttt{node.js}\slashsep\texttt{Vue.js}\slashsep\texttt{Electron}}
+%	\entry
+%		{2015 -- 2018\\\footnotesize{part time}}
+%		{Full stack developer}
+%		{Famous Eshop Inc.}
+%		{\lorem\lorem\\ \texttt{PHP}\slashsep\texttt{JS}\slashsep\texttt{MariaDB}\slashsep\texttt{Linux}}
+%	\entry
+%		{2013 -- 2014\\\footnotesize{part time}}
+%		{Junior PHP Developer}
+%		{example.com}
+%		{\lorem\lorem\\ \texttt{PHP}\slashsep\texttt{Laravel}}
+%\end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
