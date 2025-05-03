@@ -75,11 +75,11 @@
 
 \usepackage{fontawesome5} % Required for FontAwesome icons
 
-% Command to output an icon in a black square box with text to the right
-\newcommand{\icon}[3]{% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
-	\vcenteredhbox{\colorbox{black}{\makebox(#2, #2){\textcolor{white}{\large\csname fa#1\endcsname}}}}% Icon and box
+% Command to output an icon in a colored square box with text to the right
+\newcommand{\icon}[4]{% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	\vcenteredhbox{\colorbox{#3}{\makebox(#2, #2){\textcolor{white}{\large\csname fa#1\endcsname}}}}% Icon and box
 	\hspace{0.2cm}% Whitespace
-	\vcenteredhbox{\textcolor{black}{#3}}% Text
+	\vcenteredhbox{\textcolor{black}{#4}}% Text
 }
 
 %----------------------------------------------------------------------------------------
@@ -175,9 +175,18 @@
 %----------------------------------------------------------------------------------------
 
 % Command to output section title headings
-\newcommand{\cvsect}[1]{% The only parameter is the section text
+\newcommand{\cvsect}[2]{% The only parameter is the section text
 	\vspace{\baselineskip} % Whitespace before the section title
-	\colorbox{black}{\textcolor{white}{\MakeUppercase{\textbf{#1}}}}\\% Section title
+	\colorbox{#1}{\textcolor{white}{\MakeUppercase{\textbf{#2}}}}\\% Section title
+}
+
+\newcommand{\cvtitle}[2]{
+	\colorbox{#1}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{#2}}}}}
+}
+
+\newcommand{\emptycvsect}{
+	\vspace{\baselineskip}
+	\colorbox{white}{\textcolor{white}{\phantom{hidden}}}\\
 }
 
 %----------------------------------------------------------------------------------------
