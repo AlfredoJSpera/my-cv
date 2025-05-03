@@ -93,10 +93,12 @@
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
 %----------------------------------------------------------------------------------------
 
-\cvsect{Chi sono?}
+
 
 \begin{minipage}[t]{0.2\textwidth} % Left column with the introduction text, change the width as needed
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Chi sono?}
 	
 	\includegraphics[width=\textwidth]{\profilepicture} % Replace with the path to your image
 \end{minipage}
@@ -104,13 +106,16 @@
 \begin{minipage}[t]{0.3\textwidth} % Left column with the introduction text, change the width as needed
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
+	\vspace{\baselineskip}
+	\colorbox{white}{\textcolor{white}{\phantom{about me}}}\\
+
 	\aboutme\\ % Dummy text
 \end{minipage}
 \hfill % Automatic horizontal whitespace
 \begin{minipage}[t]{0.4\textwidth} % Right column with the skills bar chart, change the width as needed
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
-	
+	\cvsect{Programmazione}
 	\begin{barchart}{3} % The parameter to the barchart environment is the maximum width (in cm) of the longest bar
 		\baritem{Java (SE, EE)}{100}{black}{black}
 		\baritem{Python}{75}{black}{black}
@@ -120,46 +125,6 @@
 		\baritem{C\#}{22}{black}{black}
 	\end{barchart}
 \end{minipage}
-
-%----------------------------------------------------------------------------------------
-%	SOFTWARE AND CAPABILITIES
-%----------------------------------------------------------------------------------------
-
-% Output a series of bubbles showing your proficiency with environments and/or tools
-%\begin{center}
-%	% Each bubble must be in the format of '<size>/<label>' and you can specify as many bubbles as will fit on the page
-%	\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender} 
-%\end{center}
-
-\vspace{\baselineskip}
-\begin{minipage}[t]{0.3\textwidth} % Left column width
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-
-	\cvsect{Lingue}
-	
-	\textbf{English} - native\\
-	\textbf{German} - proficient\\
-	\textbf{Polish} - rudimentary
-\end{minipage}
-\hfill % Automatic horizontal whitespace
-\begin{minipage}[t]{0.65\textwidth} % Center column width
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
-	\cvsect{Competenze Digitali}
-	
-	\textbf{Sistemi Operativi}\\
-	\texttt{Windows}\slashsep\texttt{Linux}\\
-	\textbf{Sviluppo Web e Linguaggi di Scrittura}\\
-	\texttt{HTML5}\slashsep\texttt{CSS}
-	\slashsep\texttt{React}\slashsep\texttt{Spring Boot}\slashsep\texttt{Django}
-	\slashsep\texttt{Markdown}\slashsep\texttt{LaTeX}\\
-	\textbf{DBMS e IDE}\\
-	\texttt{MySQL}\slashsep\texttt{Elipse}\slashsep\texttt{IntelliJ}\slashsep\texttt{VS Code}\\
-	\textbf{Software e Servizi}\\
-	\texttt{Unity}\slashsep\texttt{Office}\slashsep\texttt{Photoshop}\slashsep\texttt{AutoCAD}\slashsep\texttt{GitHub}\slashsep\texttt{Trello}
-\end{minipage}
-
-
 
 
 %----------------------------------------------------------------------------------------
@@ -209,6 +174,42 @@
 		{A University Name}
 		{\lorem\lorem}
 \end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	SOFTWARE AND CAPABILITIES
+%----------------------------------------------------------------------------------------
+
+% Output a series of bubbles showing your proficiency with environments and/or tools
+%\begin{center}
+%	% Each bubble must be in the format of '<size>/<label>' and you can specify as many bubbles as will fit on the page
+%	\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender} 
+%\end{center}
+
+\vspace{\baselineskip}
+\begin{minipage}[t]{0.39\textwidth} % Left column width
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Lingue}
+	
+	\textbf{Italiano} - Lingua Madre\\
+	\textbf{Inglese} - C1
+\end{minipage}
+\hfill % Automatic horizontal whitespace
+\begin{minipage}[t]{0.6\textwidth} % Center column width
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Competenze Digitali}
+	
+	\textbf{Sistemi Operativi} \\
+	\texttt{Windows}\slashsep\texttt{Linux}\\
+	\textbf{Sviluppo Web e Linguaggi di Scrittura}\\
+	\texttt{HTML5}\slashsep\texttt{CSS}\slashsep\texttt{React}\slashsep\texttt{Spring Boot}\slashsep\texttt{Django}\slashsep\texttt{Markdown}\slashsep\texttt{LaTeX}\\
+	\textbf{DBMS e IDE}\\
+	\texttt{MySQL}\slashsep\texttt{Elipse}\slashsep\texttt{JetBrains}\slashsep\texttt{VS Code}\\
+	\textbf{Software e Servizi}\\
+	\texttt{Unity}\slashsep\texttt{Office}\slashsep\texttt{Photoshop}\slashsep\texttt{AutoCAD}\slashsep\texttt{GitHub}\slashsep\texttt{Trello}
+\end{minipage}
+
 
 %----------------------------------------------------------------------------------------
 %	ADDITIONAL INFORMATION
