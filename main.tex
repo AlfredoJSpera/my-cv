@@ -20,17 +20,17 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\documentclass[10pt]{developercv} % Default font size, values from 8-12pt are recommended
 
 % Basic Info
 \newcommand{\cvname}{Alfredo J.}
 \newcommand{\cvsurname}{Spera}
-\newcommand{\cvcurrentjob}{Studente di Informatica}
+\newcommand{\cvcurrentjob}{Laureato in Informatica}
 \newcommand{\profilepicture}{images/pfp.png}
 
 % Basic Contact Info
 \newcommand{\cvlocation}{San Marzano sul Sarno (SA)}
-\newcommand{\cvphone}{+1 123 456 789}
+\newcommand{\cvphone}{+39 351 839 53 40}
 \newcommand{\cvmail}{alfredo.j.spera@gmail.com}
 
 % Advanced Contact Info
@@ -58,7 +58,6 @@
 %----------------------------------------------------------------------------------------
 %	TITLE AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
-
 \begin{minipage}[t]{0.39\textwidth} % Left column with your name and title, change the width as needed
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
@@ -69,7 +68,7 @@
 	
 	\vspace{6pt} % Vertical whitespace
 	
-	{\huge \cvcurrentjob} % Career or current job title
+	{\LARGE \cvcurrentjob} % Career or current job title
 \end{minipage}
 \hfill % Automatic horizontal whitespace
 \begin{minipage}[t]{0.30\textwidth} % Center column with the first column of icons
@@ -133,6 +132,17 @@
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
 
+\cvsect{primary}{Esperienze Lavorative}
+
+\begin{entrylist}
+	\entry
+		{2024\\\footnotesize{tirocinio curriculare}}
+		{Sviluppatore del progetto VM Lab}
+		{\href{https://github.com/isislab-unisa}{ISISLab (Università degli Studi di Salerno)} $\cdot$ Fisciano (SA)}
+		{Progetto di tesi che offre una piattaforma per la gestione centralizzata di connessioni a macchine virtuali. Implementazione di funzionalità backend, frontend e containerizzazione dell'applicazione.\\
+		\texttt{Streamlit}\slashsep\texttt{Node.js}\slashsep\texttt{Flask}\slashsep\texttt{Docker}}
+\end{entrylist}
+
 %\cvsect{primary}{Esperienze Lavorative}
 %
 %\begin{entrylist}
@@ -168,8 +178,8 @@
 	\entry
 		{2020 -- 2025}
 		{Laurea Triennale in Informatica}
-		{Università degli Studi di Salerno $\cdot$ Fisciano (SA)}
-		{Corsi preferiti: Sistemi Operativi, Programmazione Distribuita, Tecnologie Software per il Web \\ Votazione: 91/100}
+		{\href{https://www.unisa.it/}{Università degli Studi di Salerno} $\cdot$ Fisciano (SA)}
+		{Corsi preferiti: Sistemi Operativi, Programmazione Distribuita, Tecnologie Software per il Web. \\ Votazione: 90/100}
 	\entry
 		{2015 -- 2020}
 		{Diploma Geometra \\ (Costruzioni, Ambiente e Territorio)}
@@ -187,29 +197,54 @@
 %	\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender} 
 %\end{center}
 
-\begin{minipage}[t]{0.34\textwidth} % Left column width
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
+\cvsect{primary}{Lingue}
 
-	\cvsect{primary}{Lingue}
+
+\textbf{Italiano} - Lingua Madre\\
+\textbf{Inglese} - C1
+
+% \begin{minipage}[t]{0.34\textwidth} % Left column width
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+% 	\cvsect{primary}{Lingue}
 	
-	\textbf{Italiano} - Lingua Madre\\
-	\textbf{Inglese} - C1
-\end{minipage}
-\hfill % Automatic horizontal whitespace
-\begin{minipage}[t]{0.65\textwidth} % Center column width
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
+% 	\textbf{Italiano} - Lingua Madre\\
+% 	\textbf{Inglese} - C1
+% \end{minipage}
+% \hfill % Automatic horizontal whitespace
+% \begin{minipage}[t]{0.65\textwidth} % Center column width
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
-	\cvsect{primary}{Competenze Digitali}
+% 	\cvsect{primary}{Competenze Digitali}
 	
-	\textbf{Sistemi Operativi} \\
-	\texttt{Windows}\slashsep\texttt{Linux}\\
-	\textbf{Sviluppo Web e Linguaggi di Scrittura}\\
-	\texttt{HTML5}\slashsep\texttt{CSS}\slashsep\texttt{React}\slashsep\texttt{Spring Boot}\slashsep\texttt{Django}\slashsep\texttt{Markdown}\slashsep\texttt{LaTeX}\\
-	\textbf{DBMS e IDE}\\
-	\texttt{MySQL}\slashsep\texttt{Elipse}\slashsep\texttt{JetBrains}\slashsep\texttt{VS Code}\\
-	\textbf{Software e Servizi}\\
-	\texttt{Unity}\slashsep\texttt{Office}\slashsep\texttt{Photoshop}\slashsep\texttt{AutoCAD}\slashsep\texttt{GitHub}\slashsep\texttt{Trello}
-\end{minipage}
+% 	\textbf{Sistemi Operativi}\\
+% 	\texttt{Windows}\slashsep\texttt{Linux}\\
+% 	\textbf{Sviluppo Web e Linguaggi di Scrittura}\\
+% 	\texttt{HTML5}\slashsep\texttt{CSS}\slashsep\texttt{React}\slashsep\texttt{Spring Boot}\slashsep\texttt{Django}\slashsep\texttt{Markdown}\slashsep\texttt{LaTeX}\\
+% 	\textbf{DBMS e IDE}\\
+% 	\texttt{MySQL}\slashsep\texttt{Elipse}\slashsep\texttt{JetBrains}\slashsep\texttt{VS Code}\\
+% 	\textbf{Software e Servizi}\\
+% 	\texttt{Unity}\slashsep\texttt{Office}\slashsep\texttt{Photoshop}\slashsep\texttt{AutoCAD}\slashsep\texttt{GitHub}\slashsep\texttt{Trello}\\
+% 	\textbf{Containerizzazione}\\
+% 	\texttt{Docker}\slashsep\texttt{Docker Compose}\\
+% \end{minipage}
+
+\cvsect{primary}{Competenze Digitali}
+	
+\textbf{Sistemi Operativi} \\
+\texttt{Windows}\slashsep\texttt{Linux}\\
+\textbf{Linguaggi di Scrittura}\\
+\texttt{Markdown}\slashsep\texttt{LaTeX}\\
+\textbf{Sviluppo Web e Framework}\\
+\texttt{HTML5}\slashsep\texttt{CSS}\slashsep\texttt{React}\slashsep\texttt{Spring Boot}\slashsep\texttt{Django}\\
+\textbf{DBMS e IDE}\\
+\texttt{MySQL}\slashsep\texttt{Elipse}\slashsep\texttt{JetBrains}\slashsep\texttt{VS Code}\\
+\textbf{Software}\\
+\texttt{Unity}\slashsep\texttt{Microsoft 365 (Office)}\slashsep\texttt{Google Workspace}\slashsep\texttt{Photoshop}\slashsep\texttt{Krita}\slashsep\texttt{AutoCAD}\\
+\textbf{Servizi Online}\\
+\texttt{GitHub}\slashsep\texttt{Trello}\slashsep\texttt{ClickUp}\\
+\textbf{Containerizzazione}\\
+\texttt{Docker}\slashsep\texttt{Docker Compose}\\
 
 %----------------------------------------------------------------------------------------
 %	ADDITIONAL INFORMATION
@@ -243,6 +278,7 @@
 
 %----------------------------------------------------------------------------------------
 
+\newpage
 %----------------------------------------------------------------------------------------
 %	COMPETENZE
 %----------------------------------------------------------------------------------------
@@ -281,9 +317,35 @@ Capacità di lavorare in modo indipendente, gestendo autonomamente le proprie at
 
 %----------------------------------------------------------------------------------------
 
-\cvsect{primary}{Coordinatore di progetti}
+\cvsect{primary}{Competenze di gestione e direttive}
 
+\textbf{Coordinatore di progetti}\\
 Esperienza nella gestione e coordinamento di progetti universitari in gruppo, definendo obiettivi chiari, scadenze e risorse necessarie per il raggiungimento dei risultati prefissati. Progetti universitari coordinati: Tecnologie Software per il Web, Machine Learning, Ingegneria del Software.
+
+%----------------------------------------------------------------------------------------
+%	HOBBY
+%----------------------------------------------------------------------------------------
+\cvsect{primary}{Hobby e interessi}
+
+\textbf{Videogiochi}\\
+Passione per l'industria del gaming, con particolare interesse per le dinamiche di gioco e le tecnologie sottostanti.
+
+\vspace{\baselineskip}
+
+\textbf{Hardware PC}\\
+Interesse per l'hardware dei computer, sia moderni che vintage.
+
+\vspace{\baselineskip}
+
+\textbf{Disegno digitale e Modellazione 3D}\\
+Principiante, in fase di apprendimento e sviluppo delle competenze artistiche.
+
+\vspace{\baselineskip}
+
+\textbf{Linux}\\
+Entusiasta di Linux e delle sue distribuzioni principali (Debian, Fedora, Arch), sempre in cerca di ottimizzare i propri sistemi ed estetica del desktop.
+
+
 
 %----------------------------------------------------------------------------------------
 %	PRIVACY NOTICE
